@@ -4,6 +4,7 @@ import logoA from '../../assets/images/logo-a.png'
 import subLogoA from '../../assets/images/abrarAlolyan.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -27,11 +28,32 @@ const Sidebar = () => (
         exact="true"
         activeclassname="active"
         className="contact-link"
-        to="/"
+        to="/contact"
       >
         <FontAwesomeIcon icon={faEnvelope} color="#40404e" />
       </NavLink>
     </nav>
+    <ul>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/abrar-alolyan-843494178/"
+        >
+          <FontAwesomeIcon icon={faLinkedin} color="#40404e" />
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/abrar-ol"
+        >
+          <FontAwesomeIcon icon={faGithub} color="#40404e" />
+        </a>
+      </li>
+    
+    </ul>
   </div>
 )
 export default Sidebar
